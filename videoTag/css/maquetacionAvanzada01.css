@@ -1,0 +1,113 @@
+*{margin: 0; 
+padding: 0;
+box-sizing: border-box;}
+/* header */
+
+html,body{
+    height: 100%;
+}
+.header{
+    background-color: rgb(12, 12, 12);
+    width: 100%;
+    height: 50px;
+    color: white;
+    box-sizing: content-box; 
+}
+h1{
+    padding: 10px;
+    font-size: 1.6em;
+}
+
+strong{
+    color: blue;
+}
+.contenidoHeader{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    justify-items: center;  
+}
+ .menu{
+    display: inline-block;
+    height: inherit;        
+} 
+.itemMenu{
+ display:flex;
+ height: inherit;
+
+}
+.itemMenu ul{
+    height: inherit;
+}
+.itemMenu ul a{
+display: inline-block;
+text-decoration: none;
+color: inherit;
+height: inherit;
+padding: 15px 10px;
+font-size: .8em;
+}
+.itemMenu ul a:hover{
+    background-color: white;
+    color: black;
+}
+
+/* menu principal */
+
+.menuprincipal{
+    max-width: 1101px;
+    height: 300px;
+    margin: 0 auto;
+    background-color: cornflowerblue; 
+}
+.videoPrincipal{
+    
+    height: 300px;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.videoPrincipal video{
+    max-width: 100%;
+    height: inherit;
+    object-fit: cover;
+}
+
+
+
+.descripcion{
+    background-color: rgb(199, 194, 194);
+    height: 120px;
+    height: auto;
+    margin: 0 auto;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    
+   
+    box-sizing: content-box;
+    font-size: .9em;
+  
+}
+
+.descripcion div{
+    margin-left: 20px;
+}
+
+@media screen and (max-width: 1023px){
+.descripcion{
+    flex-wrap: wrap;
+}
+
+h1{
+    font-size: 1em;
+    padding: 15px;
+}
+.descripcion div{
+   padding: 5px;
+   margin-bottom: 10px;
+}
+
+}
+
+

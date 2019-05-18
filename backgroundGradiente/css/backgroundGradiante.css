@@ -1,0 +1,8 @@
+.container{
+    width: 40%;
+    height: 450px;
+    background:url('../image/plane.png') center 30% no-repeat,linear-gradient(rgba(49, 118, 221, 0.747),rgb(26, 238, 90)) , url('../image/pattern-sky.jpg') repeat;
+    border-radius: 30px;
+    background-size:50%, 100%,100%; /*tamaño avion,gradiante,fondo*/
+}
+

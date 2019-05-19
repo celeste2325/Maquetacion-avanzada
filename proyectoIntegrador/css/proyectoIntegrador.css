@@ -1,0 +1,86 @@
+
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow');
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+@import url('https://fonts.googleapis.com/css?family=Kreon');
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+}
+
+.container{
+    max-width: 1000px; /*max-width mejora responsive*/
+    margin: 0 auto;
+}
+
+.titulo{
+    font-family: 'Roboto', sans-serif;
+    color: rgb(25, 96, 189);
+    font-size: 2em;  
+}
+
+.descriptionLab{
+    font-size: 1.2em;
+}
+.containerForm{
+   max-width: 75%; /*ocupa el 75% del padre(container), max-width mejora responsive*/
+    margin: 0 auto; /*centra el containerForm*/
+}
+
+.tituloFormulario{
+    font-family: 'Kreon', serif;
+    text-align: initial; /*pasa de text-align:center a left*/
+    font-size: 1.3em; 
+    text-shadow: 1px 2px 3px rgb(128, 121, 121);
+}
+
+label,input{
+ border-radius: 30px; 
+}
+
+label{
+    background-color:rgb(32, 148, 177);
+    display: flex; /* alinea span e input */
+    justify-content: space-between;
+    box-shadow: 0 1px 3px 0px lightblue;
+    margin-bottom: 10px;
+   
+}
+span{
+/*posiciona el icono en el centro del span*/
+   margin-left: 3%; /*queda al 3% en x independientemente del tamaño del width*/
+   vertical-align: middle;
+   padding: 10px;  
+}
+input{
+    padding: 10px;
+    width: 90%; /*ocupa el 90% del padre, el label*/
+    border: .5px solid gray;
+    padding-left: 10px;
+    border-left: .5px solid gray;
+
+    /*reset al border-radius left*/
+    border-top-left-radius: initial;
+    border-bottom-left-radius: initial;
+    
+}
+button{
+    height: 40px;
+    width: 100%;
+    background-color:rgb(32, 148, 177);
+    color: white;
+    font-size: .5em;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+}
